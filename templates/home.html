@@ -1,0 +1,282 @@
+<html>
+
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="login">
+        <h1>Customer Churn Predictor</h1>
+
+        <form action="{{ url_for('predict_datapoint')}}" method="post">
+
+            <div class="mb-3">
+                <label class="form-label">Gender</label>
+                <select class="form-control" name="gender" placeholder="Enter you Gender" required>
+                    <option class="placeholder" selected disabled value="">Select the Gender</option>
+                    <option value="Male">
+                        Male
+                    </option>
+                    <option value="Female">
+                        Female
+                    </option>
+                </select>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Senior Citizen</label>
+                <select class="form-control" name="SeniorCitizen" placeholder="Senior Citizen?" required>
+                    <option class="placeholder" selected disabled value="">Seniority</option>
+                    <option value=0>
+                        No
+                    </option>
+                    <option value=1>
+                        Yes
+                    </option>
+                </select>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Has a Partner</label>
+                <select class="form-control" name="Partner" placeholder="Has a partner?" required>
+                    <option class="placeholder" selected disabled value="">Partner</option>
+                    <option value="Yes">
+                        Yes
+                    </option>
+                    <option value="No">
+                        No
+                    </option>
+                </select>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Has a dependent?</label>
+                <select class="form-control" name="Dependents" placeholder="Has dependents?" required>
+                    <option class="placeholder" selected disabled value="">Dependents</option>
+                    <option value="Yes">
+                        Yes
+                    </option>
+                    <option value="No">
+                        No
+                    </option>
+                </select>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Has Phone Services? </label>
+                <select class="form-control" name="PhoneService" placeholder="Has Phone Service?" required>
+                    <option class="placeholder" selected disabled value="">Phone Service</option>
+                    <option value="Yes">
+                        Yes
+                    </option>
+                    <option value="No">
+                        No
+                    </option>
+                </select>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Has Multiple lines? </label>
+                <select class="form-control" name="MultipleLines" placeholder="Has Multiple lines?" required>
+                    <option class="placeholder" selected disabled value="">Multiple Lines</option>
+                    <option value="Yes">
+                        Yes
+                    </option>
+                    <option value="No">
+                        No
+                    </option>
+                    <option value="No phone service">
+                        No phone service
+                    </option>
+                </select>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Has Internet Service? </label>
+                <select class="form-control" name="InternetService" placeholder="Has Internet Service?" required>
+                    <option class="placeholder" selected disabled value="">Internet Service</option>
+                    <option value="DSL">
+                        DSL
+                    </option>
+                    <option value="Fiber optic">
+                        Fiber optic
+                    </option>
+                    <option value="No">
+                        No
+                    </option>
+                </select>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Has online Security? </label>
+                <select class="form-control" name="OnlineSecurity" placeholder="Has online Security? " required>
+                    <option class="placeholder" selected disabled value="">Online Security</option>
+                    <option value="No">
+                        No
+                    </option>
+                    <option value="Yes">
+                        Yes
+                    </option>
+                    <option value="No internet service">
+                        No internet service
+                    </option>
+                </select>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Has OnlineBackup? </label>
+                <select class="form-control" name="OnlineBackup" placeholder="Has OnlineBackup? " required>
+                    <option class="placeholder" selected disabled value="">OnlineBackup</option>
+                    <option value="Yes">
+                        Yes
+                    </option>
+                    <option value="No">
+                        No
+                    </option>
+                    <option value="No internet service">
+                        No internet service
+                    </option>
+                </select>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Has Device Protection? </label>
+                <select class="form-control" name="DeviceProtection" placeholder="Has Device Protection?" required>
+                    <option class="placeholder" selected disabled value="">Device Protection</option>
+                    <option value="Yes">
+                        Yes
+                    </option>
+                    <option value="No">
+                        No
+                    </option>
+                    <option value="No internet service">
+                        No internet service
+                    </option>
+                </select>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Has TechSupport? </label>
+                <select class="form-control" name="TechSupport" placeholder="Has TechSupport?" required>
+                    <option class="placeholder" selected disabled value="">TechSupport</option>
+                    <option value="Yes">
+                        Yes
+                    </option>
+                    <option value="No">
+                        No
+                    </option>
+                    <option value="No internet service">
+                        No internet service
+                    </option>
+                </select>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Has StreamingTV? </label>
+                <select class="form-control" name="StreamingTV" placeholder="Has StreamingTV?" required>
+                    <option class="placeholder" selected disabled value="">StreamingTV</option>
+                    <option value="Yes">
+                        Yes
+                    </option>
+                    <option value="No">
+                        No
+                    </option>
+                    <option value="No internet service">
+                        No internet service
+                    </option>
+                </select>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Has StreamingMovies? </label>
+                <select class="form-control" name="StreamingMovies" placeholder="Has StreamingMovies?" required>
+                    <option class="placeholder" selected disabled value="">StreamingMovies</option>
+                    <option value="Yes">
+                        Yes
+                    </option>
+                    <option value="No">
+                        No
+                    </option>
+                    <option value="No internet service">
+                        No internet service
+                    </option>
+                </select>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Has Contract? </label>
+                <select class="form-control" name="Contract" placeholder="Has Contract?" required>
+                    <option class="placeholder" selected disabled value="">Contract</option>
+                    <option value="Month-to-month">
+                        Month-to-month
+                    </option>
+                    <option value="One year">
+                        One year
+                    </option>
+                    <option value="Two year">
+                        Two year
+                    </option>
+                </select>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Opted PaperlessBilling?</label>
+                <select class="form-control" name="PaperlessBilling" placeholder="Opted PaperlessBilling?" required>
+                    <option class="placeholder" selected disabled value="">PaperlessBilling</option>
+                    <option value="Yes">
+                        Yes
+                    </option>
+                    <option value="No">
+                        No
+                    </option>
+                </select>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Payment Method</label>
+                <select class="form-control" name="PaymentMethod" placeholder="Payment Method" required>
+                    <option class="placeholder" selected disabled value="">Payment Method</option>
+                    <option value="Electronic check">
+                        Electronic check
+                    </option>
+                    <option value="Mailed check">
+                        Mailed check
+                    </option>
+                    <option value="Bank transfer (automatic)">
+                        Bank transfer (automatic)
+                    </option>
+                    <option value="Credit card (automatic)">
+                        Credit card (automatic)
+                    </option>
+                </select>
+            </div>
+
+            <div class="mb-3">
+                <label>Tenure:</label>
+                <input type="number" id="tenure" name="tenure">
+            </div>
+
+            <div class="mb-3">
+                <label>Monthly Charges:</label>
+                <input type="number" id="MonthlyCharges" name="MonthlyCharges">
+            </div>
+
+            <div class="mb-3">
+                <label>Total Charges:</label>
+                <input type="number" id="TotalCharges" name="TotalCharges" >
+            </div>
+
+
+            <div class="mb-3">
+                <input class="btn btn-primary" type="submit" value="Predict your Maths Score" required />
+            </div>
+        </form>
+
+        <h2>
+            Result: {{resultss}}
+        </h2>
+
+        <body>
+
+</html>

@@ -1,0 +1,14 @@
+[2024-03-08 23:28:08,992] 96 werkzeug - WARNING -  * Debugger is active!
+[2024-03-08 23:28:08,992] 96 werkzeug - INFO -  * Debugger PIN: 816-212-174
+[2024-03-08 23:28:12,583] 96 werkzeug - INFO - 127.0.0.1 - - [08/Mar/2024 23:28:12] "[35m[1mPOST /predictdata HTTP/1.1[0m" 500 -
+[2024-03-08 23:28:12,600] 96 werkzeug - INFO - 127.0.0.1 - - [08/Mar/2024 23:28:12] "[36mGET /predictdata?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+[2024-03-08 23:28:12,657] 96 werkzeug - INFO - 127.0.0.1 - - [08/Mar/2024 23:28:12] "[36mGET /predictdata?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+[2024-03-08 23:28:12,995] 96 werkzeug - INFO - 127.0.0.1 - - [08/Mar/2024 23:28:12] "[36mGET /predictdata?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+[2024-03-08 23:28:13,250] 96 werkzeug - INFO - 127.0.0.1 - - [08/Mar/2024 23:28:13] "[36mGET /predictdata?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+[2024-03-08 23:28:15,907] 96 werkzeug - INFO - 127.0.0.1 - - [08/Mar/2024 23:28:15] "GET /predictdata HTTP/1.1" 200 -
+[2024-03-08 23:28:55,868] 96 werkzeug - INFO - 127.0.0.1 - - [08/Mar/2024 23:28:55] "[35m[1mPOST /predictdata HTTP/1.1[0m" 500 -
+[2024-03-08 23:28:55,996] 96 werkzeug - INFO - 127.0.0.1 - - [08/Mar/2024 23:28:55] "[36mGET /predictdata?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+[2024-03-08 23:28:56,194] 96 werkzeug - INFO - 127.0.0.1 - - [08/Mar/2024 23:28:56] "[36mGET /predictdata?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+[2024-03-08 23:28:56,518] 96 werkzeug - INFO - 127.0.0.1 - - [08/Mar/2024 23:28:56] "[36mGET /predictdata?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+[2024-03-08 23:28:56,767] 96 werkzeug - INFO - 127.0.0.1 - - [08/Mar/2024 23:28:56] "[36mGET /predictdata?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+[2024-03-08 23:29:23,263] 96 werkzeug - INFO -  * Detected change in 'C:\\Users\\ERROL\\Documents\\Coding\\Customer Churn Prediction\\src\\pipeline\\predict_pipeline.py', reloading

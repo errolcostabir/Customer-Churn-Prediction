@@ -1,0 +1,18 @@
+[2024-03-08 23:14:04,652] 96 werkzeug - WARNING -  * Debugger is active!
+[2024-03-08 23:14:04,652] 96 werkzeug - INFO -  * Debugger PIN: 816-212-174
+[2024-03-08 23:15:07,679] 96 werkzeug - INFO - 127.0.0.1 - - [08/Mar/2024 23:15:07] "GET / HTTP/1.1" 200 -
+[2024-03-08 23:15:07,714] 96 werkzeug - INFO - 127.0.0.1 - - [08/Mar/2024 23:15:07] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+[2024-03-08 23:15:14,825] 96 werkzeug - INFO - 127.0.0.1 - - [08/Mar/2024 23:15:14] "[33mGET /predict HTTP/1.1[0m" 404 -
+[2024-03-08 23:15:26,143] 96 werkzeug - INFO - 127.0.0.1 - - [08/Mar/2024 23:15:26] "GET /predictdata HTTP/1.1" 200 -
+[2024-03-08 23:16:31,260] 96 werkzeug - INFO - 127.0.0.1 - - [08/Mar/2024 23:16:31] "[35m[1mPOST /predictdata HTTP/1.1[0m" 500 -
+[2024-03-08 23:16:31,321] 96 werkzeug - INFO - 127.0.0.1 - - [08/Mar/2024 23:16:31] "GET /predictdata?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+[2024-03-08 23:16:31,347] 96 werkzeug - INFO - 127.0.0.1 - - [08/Mar/2024 23:16:31] "GET /predictdata?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+[2024-03-08 23:16:31,679] 96 werkzeug - INFO - 127.0.0.1 - - [08/Mar/2024 23:16:31] "GET /predictdata?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+[2024-03-08 23:16:31,930] 96 werkzeug - INFO - 127.0.0.1 - - [08/Mar/2024 23:16:31] "[36mGET /predictdata?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+[2024-03-08 23:24:11,074] 96 werkzeug - INFO - 127.0.0.1 - - [08/Mar/2024 23:24:11] "GET /predictdata HTTP/1.1" 200 -
+[2024-03-08 23:24:48,629] 96 werkzeug - INFO - 127.0.0.1 - - [08/Mar/2024 23:24:48] "[35m[1mPOST /predictdata HTTP/1.1[0m" 500 -
+[2024-03-08 23:24:48,762] 96 werkzeug - INFO - 127.0.0.1 - - [08/Mar/2024 23:24:48] "[36mGET /predictdata?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+[2024-03-08 23:24:48,981] 96 werkzeug - INFO - 127.0.0.1 - - [08/Mar/2024 23:24:48] "[36mGET /predictdata?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+[2024-03-08 23:24:49,313] 96 werkzeug - INFO - 127.0.0.1 - - [08/Mar/2024 23:24:49] "[36mGET /predictdata?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+[2024-03-08 23:24:49,579] 96 werkzeug - INFO - 127.0.0.1 - - [08/Mar/2024 23:24:49] "[36mGET /predictdata?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+[2024-03-08 23:27:45,331] 96 werkzeug - INFO -  * Detected change in 'c:\\users\\errol\\documents\\coding\\customer churn prediction\\app.py', reloading
