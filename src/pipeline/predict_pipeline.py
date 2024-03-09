@@ -45,11 +45,11 @@ class CustomData:
         ):
                 
         self.gender=gender
-        self.SeniorCitizen=SeniorCitizen,
+        self.SeniorCitizen=SeniorCitizen
         self.Partner=Partner
         self.Dependents=Dependents
-        self.PhoneService=PhoneService,
-        self.MultipleLines=MultipleLines,
+        self.PhoneService=PhoneService
+        self.MultipleLines=MultipleLines
         self.InternetService=InternetService
         self.OnlineSecurity=OnlineSecurity
         self.OnlineBackup=OnlineBackup

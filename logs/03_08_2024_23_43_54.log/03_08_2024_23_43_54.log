@@ -1,0 +1,5 @@
+[2024-03-08 23:43:54,602] 96 werkzeug - WARNING -  * Debugger is active!
+[2024-03-08 23:43:54,608] 96 werkzeug - INFO -  * Debugger PIN: 816-212-174
+[2024-03-08 23:44:03,629] 96 werkzeug - INFO - 127.0.0.1 - - [08/Mar/2024 23:44:03] "GET /predictdata HTTP/1.1" 200 -
+[2024-03-08 23:44:38,590] 96 werkzeug - INFO - 127.0.0.1 - - [08/Mar/2024 23:44:38] "POST /predictdata HTTP/1.1" 200 -
+[2024-03-08 23:46:24,490] 96 werkzeug - INFO -  * Detected change in 'c:\\users\\errol\\documents\\coding\\customer churn prediction\\app.py', reloading

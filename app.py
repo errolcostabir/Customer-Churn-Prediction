@@ -48,7 +48,11 @@ def predict_datapoint():
         predict_pipeline=PredictPipeline()
         results=predict_pipeline.predict(pred_df)
         print(results)
-        return render_template('home.html',resultss=results[0])
+        if int(results[0])== 1:
+            results_txt="Customer will Churn"
+        else: 
+            results_txt="Customer will not Churn"
+        return render_template('home.html',resultss=results_txt)
     
     
 if __name__=="__main__":
