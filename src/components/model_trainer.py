@@ -1,6 +1,7 @@
 import imp
 import os
 import sys
+import numpy as np
 from dataclasses import dataclass
 
 from sklearn.ensemble import (
@@ -38,7 +39,11 @@ class ModelTrainer:
             oversample = SMOTE(k_neighbors=5)
             X_smote, y_smote = oversample.fit_resample(x_train, y_train)
             x_train, y_train = X_smote, y_smote
-
+            
+            #print(y_train.value_counts())
+            unique, counts = np.unique(y_train, return_counts=True)
+            print(dict(zip(unique, counts)))
+            
             logging.info("Best model found on training and testing dataset")
             
             model=RandomForestClassifier(random_state=1)
